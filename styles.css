@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Fundo azul claro */
+    color: #003366; /* Texto azul marinho */
+}
+
+header, footer {
+    background-color: transparent;
+    color: #003366;
+    padding: 0,5rem;
+    text-align: center;
+    width: 100%;
+}
+
+main {
+    flex: 1;
+    width: 90%;
+    max-width: 800px; /* Largura máxima */
+    margin-top: 2rem;
+}
+
+.input-output-container {
+    display: flex;
+    justify-content: space-between; /* Espaço entre as caixas de texto */
+    width: 130%;
+    margin-bottom: 1rem; /* Espaçamento abaixo do container */
+}
+
+.input-section {
+    flex: 1; /* Para ocupar o espaço disponível */
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem; /* Espaçamento entre a caixa de entrada e a caixa de saída */
+    margin-left: -15rem; /* Margem à esquerda aumentada */
+}
+
+.output-section {
+    flex: 1; /* Para ocupar o espaço disponível */
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem; /* Espaçamento entre a caixa de saída e a caixa de entrada */
+}
+
+textarea {
+    width: 100%;
+    height: 450px; /* Dobrando a altura */
+    padding: 1rem; /* Aumentando o espaçamento interno */
+    background-color: transparent; /* Fundo transparente */
+    border: 1px solid transparent; /* Borda transparente */
+    resize: none;
+    box-shadow: 2px 2px 5px transparent; /* sem Sombra*/
+    color: #003366; /* Texto azul marinho */
+    font-size: 18px; /* Aumentando o tamanho da fonte */
+    border-radius: 15px; /* Bordas arredondadas */
+}
+
+.output-text {
+    background-color: #ffffff; /* Fundo branco */
+    border: 1px solid #ccc; /* Borda cinza */
+}
+
+.buttons-section {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    margin-top: 0.5rem; /* Espaço acima dos botões */
+}
+
+button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem; /* Espaçamento entre os botões */
+    border: 1px solid #003366; /* Borda azul marinho */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer;
+    color: #003366; /* Texto azul marinho */
+    background-color: #f2f2f2; /* Cinza claro */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+    width: 150px; /* Largura fixa para os botões de criptografar e descriptografar */
+}
+
+button:hover {
+    background-color: #003366; /* Azul marinho */
+    color: #e0f7fa; /* Letras azul claro */
+    border-color: #003366; /* Borda azul marinho ao passar o mouse */
+}
+
+button:active {
+    background-color: #003366; /* Azul marinho ao clicar */
+    color: #e0f7fa; /* Letras azul claro ao clicar */
+}
+#copy-btn {
+    display: block;
+    width: 150px; /* Largura fixa para o botão copiar */
+    margin: 0.5rem auto 0; /* Centraliza o botão horizontalmente */
+    padding: 0.5rem 1rem;
+    border: 1px solid #003366; /* Borda azul marinho */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer;
+    color: #003366; /* Texto azul marinho */
+    background-color: #f2f2f2; /* Cinza claro */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+#copy-btn:hover {
+    background-color: #003366; /* Azul marinho */
+    color: #e0f7fa; /* Letras azul claro */
+    border-color: #003366; /* Borda azul marinho ao passar o mouse */
+}
+
+#copy-btn:active {
+    background-color: #003366; /* Azul marinho ao clicar */
+    color: #e0f7fa; /* Letras azul claro ao clicar */
+}
+.image-container {
+    position: absolute;
+    top: 10px; /* Ajuste a posição vertical conforme necessário */
+    left: 10px; /* Ajuste a posição horizontal conforme necessário */
+}
+.image-container img {
+    border-radius: 15px; /* Bordas arredondadas */
+}
